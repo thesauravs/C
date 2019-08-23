@@ -1,0 +1,4 @@
+this is just a file to practice file handling.
+this is a new line.
+
+wohooo!this is a test line to appendhi this is a string that contains more than 30 characters and let's see what happens\n
