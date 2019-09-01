@@ -14,12 +14,9 @@ int main(){
     printf("The size of double is %lu.\n", sizeof(doubleType));
     printf("The size of char is %lu.\n", sizeof(charType));
  */
-    printf("The value of integerType is %d.\n", integerType);
-    printf("The value of address of integerType is %p.\n", &integerType);
-    printf("The value of pointer to integerType is %p.\n", pointer);
-    printf("The address of pointer to integerType is %p.\n", &pointer);
-    printf("The value of pointer pointing also called dereferencing is %d.\n", *pointer);
-    printf("This is how you print %% sign.\n");
-
+    printf("Name \t\t Value \t Address\n");
+    printf("%s \t %d \t %p\n", "integerType", integerType, &integerType);
+    printf("%s \t %d \t %p\n", "pointer", *pointer, &pointer);
+    printf("\nThe value of pointer is %p.\n", pointer);
 return 0;
 }
