@@ -1,6 +1,13 @@
+//This is C test file for lex analyser
 #include<stdio.h>
-
+#define max 10
+#include"abc.h"
 int main(){
-    printf("Hello World\n");
+    int variable = 20;
+    char ch = 'character';
+
+    float decimal = 3.14;
+    printf("Hello World.\n");
+
 return 0;
 }

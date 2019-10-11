@@ -37,17 +37,18 @@ int main(){
                     }; 
 
     int startState = 1, currentState = 1;
-    int lastSeenAcceptState = 11;
+    int lastSeenAcceptState = 0;
     int nextState;
 
-    int inputCharacter[] = {5,4,12,4,0}; //string is "fi" which corresponds to 54
+    int inputCharacter[] = {7,1,2,7,0}; //string is "fi" which corresponds to 54
     int i = 0; //used to advance the input
     int TOKEN; //Token type
     int currentPosition; //to record current position of input
 
     while (inputCharacter[i] != 0){
         //Longest Match
-        if(nextState = TM[currentState][inputCharacter[i]]){
+        nextState = TM[currentState][inputCharacter[i]];
+        if(nextState){
             currentState = nextState;
             //i++;
             //check if current state is accepting / final state
