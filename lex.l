@@ -2,6 +2,7 @@
 #include <stdio.h>
 int countLine = 0;
 int countID = 0;
+
 %}
 
 id [_a-zA-Z][_a-zA-Z0-9]*
@@ -34,6 +35,7 @@ preprocessor #(include<.*\.h>|define.*|include\".*\")
 {newline} {countLine++;}
 {wspc} {;}
 
+
 %%
   
 //Supplementary C Code
@@ -56,6 +58,6 @@ yyin = fp;
 yylex();  
 printf("\nThe total number of lines in this program is %d.\n", countLine);
 printf("The total number of identifier in this program is %d.\n", countID);
-  
+
 return 0; 
 } 

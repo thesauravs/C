@@ -568,7 +568,8 @@ char *yytext;
 #include <stdio.h>
 int countLine = 0;
 int countID = 0;
-#line 572 "lex.yy.c"
+
+#line 573 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -750,10 +751,10 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
     
-#line 18 "lex.l"
+#line 19 "lex.l"
 
 
-#line 757 "lex.yy.c"
+#line 758 "lex.yy.c"
 
 	if ( !(yy_init) )
 		{
@@ -838,81 +839,81 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 20 "lex.l"
+#line 21 "lex.l"
 {printf("%s \t\t COMMA\n", yytext);}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 21 "lex.l"
+#line 22 "lex.l"
 {printf("%s \t\t SEMICOLON\n", yytext);}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 23 "lex.l"
+#line 24 "lex.l"
 {printf("%s \t\t BRACKET\n", yytext);}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 24 "lex.l"
+#line 25 "lex.l"
 {printf("%s \t\t COMMENT\n", yytext);}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 25 "lex.l"
+#line 26 "lex.l"
 {printf("%s \t\t STRING\n", yytext);}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 27 "lex.l"
+#line 28 "lex.l"
 {printf("%s \t\t PREPROCESSOR\n", yytext);}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 28 "lex.l"
+#line 29 "lex.l"
 {printf("%s \t\t RESERVED_FUNCTION\n", yytext);}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 29 "lex.l"
+#line 30 "lex.l"
 {printf("%s \t\t RESERVED_KEYWORD\n", yytext);}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 30 "lex.l"
+#line 31 "lex.l"
 {printf("%s \t\t OPERATOR\n", yytext);}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 31 "lex.l"
+#line 32 "lex.l"
 {printf("%s \t\t ID\n", yytext); countID++;}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 32 "lex.l"
+#line 33 "lex.l"
 {printf("%s \t\t NUMBER_INT\n", yytext);}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 33 "lex.l"
+#line 34 "lex.l"
 {printf("%s \t\t NUMBER_FLOAT\n", yytext);}
 	YY_BREAK
 case 13:
 /* rule 13 can match eol */
 YY_RULE_SETUP
-#line 34 "lex.l"
+#line 35 "lex.l"
 {countLine++;}
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 35 "lex.l"
+#line 36 "lex.l"
 {;}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 37 "lex.l"
+#line 39 "lex.l"
 ECHO;
 	YY_BREAK
-#line 916 "lex.yy.c"
+#line 917 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1909,7 +1910,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 37 "lex.l"
+#line 39 "lex.l"
 
 
   
@@ -1933,7 +1934,7 @@ yyin = fp;
 yylex();  
 printf("\nThe total number of lines in this program is %d.\n", countLine);
 printf("The total number of identifier in this program is %d.\n", countID);
-  
+
 return 0; 
 } 
 
